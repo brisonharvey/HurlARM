@@ -8,7 +8,7 @@ cd ../..
 
 Write-Output "Building Hurl...."
 dotnet restore
-dotnet publish -c Release -r win-x64 --no-self-contained --output $OUTPUT_PATH ./Hurl.sln
+dotnet publish -c Release -r win-arm64 --no-self-contained --output $OUTPUT_PATH ./Hurl.sln
 
 Write-Output "Building Installer...."
 & $INNO_SETUP_COMPILER ./Utils/installer.iss
